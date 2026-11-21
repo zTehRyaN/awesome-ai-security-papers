@@ -1,10 +1,15 @@
 # Awesome AI Security Papers [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated, up-to-speed reading list of the most impactful papers and blog posts in AI Security — with a primary focus on GenAI/LLM security, but also covering ML security and privacy at large.
+A curated reading list of impactful AI security papers and blog posts, with selected learning resources. The primary focus is GenAI/LLM security, alongside broader ML security and privacy.
 
 This is not meant to be an exhaustive collection. It is a personal selection of the readings that left the strongest mark after going through dozens of papers, preprints, and deep dives every week. If someone asks you *"I want to access the GenAI/LLM security field, what resources could you point me to?"*, this repository aims to be the link that I'd share.
 
+> **Looking for a starting point?** Explore [safety, alignment, and control](#safety-alignment--control), then [agent security and evaluation](#agent-security--evaluation). These are complementary perspectives, not interchangeable threat models.
+
 ## Contents
+- [Learning Resources](#learning-resources)
+  - [Safety, Alignment & Control](#safety-alignment--control)
+  - [Agent Security & Evaluation](#agent-security--evaluation)
 - [Adversarial Attacks & Red Teaming](#adversarial-attacks--red-teaming)
 - [Prompt Injection & Jailbreaking](#prompt-injection--jailbreaking)
 - [Privacy, Data Poisoning & Extraction](#privacy-data-poisoning--extraction)
@@ -65,6 +70,32 @@ This is not meant to be an exhaustive collection. It is a personal selection of 
 
 | Year | Paper | Key Takeaways & Description |
 | :--- | :---- | :-------------------------- |
+
+---
+
+## Learning Resources
+
+A compact selection of introductions, engineering guidance, and worked examples to accompany the papers. These resources serve different purposes: understanding alignment failures, securing AI systems against adversaries, and measuring model or agent behavior. There is no requirement to read them all in sequence, and inclusion does not imply completing every linked exercise or endorsing every claim.
+
+**Background:** basic familiarity with LLMs and tool-using agents is useful. For model foundations and agent engineering, see the companion [Awesome GenAI Papers](https://github.com/zTehRyaN/awesome-genai-papers) collection.
+
+### Safety, Alignment & Control
+
+| Resource | Format / starting point | Why choose it |
+| :--- | :--- | :--- |
+| **[Google DeepMind: AGI Safety Course](https://www.youtube.com/playlist?list=PLw9kjlF6lD5UqaZvMTbhJB8sV-yuXu5eW)** | Short video course. Start from the introduction; Parts 2 and 3 cover alignment approaches and frontier safety practices. | A compact conceptual map of risks, oversight, security and control, interpretability, and dangerous-capability evaluation. |
+| **[BlueDot: Introduction to AI Control](https://blog.bluedot.org/p/ai-control)** | Introductory article. | Understand the distinction between making a model trustworthy and designing a system that remains safe even if the model is not. |
+| **[BlueDot: Introduction to Scalable Oversight](https://blog.bluedot.org/p/scalable-oversight-intro)** | Introductory article on evaluating increasingly complex tasks. | Explore supervision when humans cannot easily judge an output unaided; this is a different problem from ordinary permission checking. |
+
+### Agent Security & Evaluation
+
+| Resource | Format / starting point | Why choose it |
+| :--- | :--- | :--- |
+| **[Simon Willison: The Lethal Trifecta](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/)** | Short architectural threat-model explanation. | Understand the combination of private-data access, untrusted content, and an exfiltration channel. A useful entry point to indirect prompt injection, not a complete taxonomy of agent threats. |
+| **[Abbey Chaver: Key Problems in AI Infrastructure Security](https://multipliercg.substack.com/p/key-problems-in-ai-infrastructure)** | Infrastructure-security overview. | Broaden the view beyond prompts and jailbreaks to the assets, access paths, and infrastructure supporting advanced AI systems. |
+| **[Anthropic: Demystifying Evals for AI Agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)** | Engineering guide to evaluation design. | Learn how tasks, graders, harnesses, and repeatability shape an evaluation. Capability scores alone are not evidence of security. |
+| **[METR: Measuring AI Ability to Complete Long Software Tasks](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks)** | Worked evaluation methodology: task horizons and reliability. | Understand what a task time horizon measures, its uncertainty, and its limitations. Treat the reported model results as a dated snapshot, not a current leaderboard. |
+| **[METR: Recent Frontier Models Are Reward Hacking](https://metr.org/blog/2025-06-05-recent-reward-hacking/)** | Case studies of agents exploiting evaluation weaknesses. | See why a high reward or passing score need not mean the intended task was completed, and why evaluators themselves need scrutiny. |
 
 ---
 

@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing to this curated list of AI Security research.
 
-I welcome additions that improve and grow the collection of milestone and highly-relevant papers. Because the list relies on a specific Markdown Table format to remain highly readable, please follow the strict formatting rules below when submitting a Pull Request.
+I welcome milestone papers and a small number of complementary learning resources. Paper contributions must follow the table format below; courses, tutorials, and explanatory guides belong in the separate Learning Resources section.
 
 ## How to Add a Paper
 
@@ -41,5 +41,17 @@ Place the paper under one of the six categories:
 - **Concise Descriptions**: Keep the description to 1-2 plain English sentences. Explain *what* it does and why it matters.
 - **Provide Context**: Only if there is a genuinely impactful quote or takeaway, append it with `<br><br> _"Quote text"_`. If there is no standout insight, omit the quote entirely.
 - **Working Links**: Ensure your link resolves correctly to the paper (e.g., arXiv, Nature, or the primary blog post).
+
+## How to Suggest a Learning Resource
+
+Use a pull request with a brief explanation of the resource's value and its overlap with existing entries.
+
+- Follow the existing `Resource | Format / starting point | Why choose it` table under the appropriate learning subsection.
+- Distinguish safety and alignment, security of AI systems, and evaluation of AI capabilities. State the intended scope rather than presenting them as interchangeable.
+- Prefer freely accessible original resources. Give a useful entry point and any prerequisite knowledge, rather than adding an entire catalog.
+- Keep dated evaluation results in context. Do not equate benchmark success, model alignment, or the presence of guardrails with demonstrated security.
+- Avoid duplicate introductions, vendor marketing without technical substance, personal completion claims, and private bootcamp or application materials.
+- Keep learning entries separate from the six paper categories. Paper formatting, category placement, and year ordering remain unchanged.
+- Check links and descriptions, and keep descriptions concise and in English.
 
 Thanks for contributing.
