@@ -75,7 +75,7 @@ Use the [safety, alignment, and control](#safety-alignment--control) resources t
 
 ## Learning resources
 
-Alignment failures, adversarial attacks, and capability evaluation raise different questions. Choose among these introductions, engineering guides, and case studies according to the question you want to explore. Listing a resource does not imply completing every linked exercise or endorsing every claim.
+Alignment failures, adversarial attacks, and capability evaluation raise different questions. Choose among these introductions, engineering guides, and case studies according to the question you want to explore.
 
 Basic familiarity with LLMs and tool-using agents is useful. For model foundations and agent engineering, see the companion [Awesome GenAI Papers](https://github.com/zTehRyaN/awesome-genai-papers) collection.
 
